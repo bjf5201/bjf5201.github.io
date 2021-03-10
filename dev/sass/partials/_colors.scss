@@ -1,0 +1,29 @@
+/** COLORS **/
+
+$white: #f6f4f3;
+$pink: #ed91a1;
+$red: #df3e3c;
+$orange: #ef8b50;
+$maroon: #39292f;
+$grey-pink: #b7a1b6;
+$grey: #333;
+
+$primary-text: #333;
+$background-color: $white;
+$primary-color: $red;
+$secondary-color: $pink;
+$highlight-color: $orange;
+$subtitle-color: $maroon;
+$keywords: $grey-pink;
+$primary-btn: $red;
+$link: $maroon;
+$background-color: $grey;
+
+body {
+    $background-color: $background-color;
+} 
+
+.intro {
+    background-color: $grey;
+    opacity: 0.8
+}

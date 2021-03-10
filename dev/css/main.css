@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/** COLORS **/
+.intro {
+  background-color: #333;
+  opacity: 0.8;
+}
+
+/** LAYOUT **/
+.main-header {
+  background-color: black;
+  opacity: 0.8;
+}
+
+@media (min-width: 769px) {
+  .main-header {
+    padding-top: 1rem;
+    height: 50px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav a, .nav .left {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 300;
+  display: block;
+  color: #cabfb9;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 1em;
+}
+
+.nav a:hover {
+  color: #f6f4f3;
+}
+
+@media (min-width: 769px) {
+  .nav {
+    flex-direction: row;
+  }
+  .nav li {
+    width: 125px;
+  }
+  .nav .left {
+    margin-right: auto;
+  }
+  .nav a, .nav .left {
+    padding: .4rem;
+    font-size: 1.125em;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.container {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro-p {
+  flex: 1;
+}
+
+/** TYPOGRAPHY **/
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url("fonts/robotomono/RobotoMono-Thin.ttf") format("truetype");
+}
+
+body {
+  font-family: 'RobotoMono-Thin', 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+
+@font-face {
+  font-family: "portfolio-icons";
+  src: url("fonts/portfolio-icons.eot?xoydpq");
+  src: url("fonts/portfolio-icons.eot?xoydpq#iefix") format("embedded-opentype"), url("fonts/portfolio-icons.ttf?xoydpq") format("truetype"), url("fonts/portfolio-icons.woff?xoydpq") format("woff"), url("fonts/portfolio-icons.svg?xoydpg#icomoon-font-family") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "portfolio-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-files-empty:before {
+  content: "";
+}
+
+.icon-file-text:before {
+  content: "";
+}
+
+.icon-folder-plus:before {
+  content: "";
+}
+
+.icon-folder-download:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-phone-hang-up:before {
+  content: "";
+}
+
+.icon-envelop:before {
+  content: "";
+}
+
+.icon-printer:before {
+  content: "";
+}
+
+.icon-keyboard:before {
+  content: "";
+}
+
+.icon-desktop:before {
+  content: "";
+}
+
+.icon-mobile:before {
+  content: "";
+}
+
+.icon-mobile2:before {
+  content: "";
+}
+
+.icon-save:before {
+  content: "";
+}
+
+.icon-undo:before {
+  content: "";
+}
+
+.icon-redo:before {
+  content: "";
+}
+
+.icon-chat-bubble:before {
+  content: "";
+}
+
+.icon-chat-bubble-hollow:before {
+  content: "";
+}
+
+.icon-zoom-in:before {
+  content: "";
+}
+
+.icon-equalizer:before {
+  content: "";
+}
+
+.icon-stats-dots:before {
+  content: "";
+}
+
+.icon-trophy:before {
+  content: "";
+}
+
+.icon-gift:before {
+  content: "";
+}
+
+.icon-briefcase:before {
+  content: "";
+}
+
+.icon-tree:before {
+  content: "";
+}
+
+.icon-download2:before {
+  content: "";
+}
+
+.icon-sphere:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-woman:before {
+  content: "";
+}
+
+.icon-happy:before {
+  content: "";
+}
+
+.icon-point-up:before {
+  content: "";
+}
+
+.icon-point-right:before {
+  content: "";
+}
+
+.icon-point-down:before {
+  content: "";
+}
+
+.icon-point-left:before {
+  content: "";
+}
+
+.icon-question:before {
+  content: "";
+}
+
+.icon-info:before {
+  content: "";
+}
+
+.icon-cross:before {
+  content: "";
+}
+
+.icon-checkmark:before {
+  content: "";
+}
+
+.icon-checkmark2:before {
+  content: "";
+}
+
+.icon-arrow-up-left:before {
+  content: "";
+}
+
+.icon-arrow-up:before {
+  content: "";
+}
+
+.icon-arrow-up-right:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-arrow-down-right:before {
+  content: "";
+}
+
+.icon-arrow-down:before {
+  content: "";
+}
+
+.icon-arrow-down-left:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-circle-up:before {
+  content: "";
+}
+
+.icon-circle-right:before {
+  content: "";
+}
+
+.icon-circle-down:before {
+  content: "";
+}
+
+.icon-circle-left:before {
+  content: "";
+}
+
+.icon-indent-increase:before {
+  content: "";
+}
+
+.icon-embed:before {
+  content: "";
+}
+
+.icon-terminal:before {
+  content: "";
+}
+
+.icon-mail2:before {
+  content: "";
+}
+
+.icon-amazon:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook2:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-whatsapp:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-github:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-linkedin2:before {
+  content: "";
+}
+
+.icon-git:before {
+  content: "";
+}
+
+.icon-codepen:before {
+  content: "";
+}
+/*# sourceMappingURL=main.css.map */
