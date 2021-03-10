@@ -1,1 +1,6 @@
+# Ignore config files
 .vs
+.gitignore
+
+# Ignore production files
+dist/
