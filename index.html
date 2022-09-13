@@ -14,26 +14,26 @@
     font-family: 'Rubik', sans-serif;
   }
 </style>
-<title>Bethany Fannin | Front End Developer & JavaScript Enthusiast</title>
+<title>Bethany Fannin | Front-End Developer & JavaScript Enthusiast</title>
 </head>
 <body>
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="navbar">
       <div class="logo">bf</div>
       <nav class="hero-nav">
         <ul>
-          <li>Bio</li>
-          <li>Work</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <li class="nav-link"><a class="nav-link" href="#bio">Bio</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="hero-area">
       <div class="hero-text">
         <h1>Bethany Fannin</h1>
-        <p>Front End Developer & JavaScript Enthusiast</p>
-        <button class="button">My Work</button>
+        <p>Front-End Developer & JavaScript Enthusiast</p>
+        <button class="btn">My Work</button>
       </div>
       <div class="socials">
         <div class="twitter">
@@ -49,27 +49,28 @@
     </div>
   </section>
   <!-- Bio -->
-  <section class="bio">
+  <section class="bio" id="bio">
     <h2>A little about me</h2>
     <div class="subsection-container">
       <div class="subsection">
-        <p class="subtitle">Hello, my name is <strong>Bethany</strong> and I am a <strong>frontend developer</strong>.</p>
+        <p class="subtitle">Hello, my name is <strong>Bethany</strong> and I am a <strong>front-end developer</strong>.</p>
         <p>I give life my all - whether it be theater or coding, I am a vibrant person who is constantly working on some passion project. Check out my most recent <a href="https://github.com/bjf5201" target="_blank">projects <i class="fa-regular fa-window-restore"></i></a> to see what I've been up to lately.</p>
         <p>I have always had a curiosity for finding new ways of accessing, organizing, and presenting information using digital technologies. In personal projects, I value tenacity, humility, and utilizing my abilities to improve the lives of others. When working with a team, I offer a strong work ethic and an open mind while working to ensure that every voice is heard. In group settings, I prioritize empathetic, supportive, and transparent communication above all else.</p> 
-        <p>I am obsessed with well-written documentation and instructional templates. Analyzing complex systems and developing neat, descriptive language for them brings me great happiness! <a href="/pages/bio.html">Read more >></a></p>
+        <p>I am obsessed with well-written documentation and instructional templates. Analyzing complex systems and developing neat, descriptive language for them brings me great happiness!</p>
+        <p class="center"><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></p>
       </div>
       <div class="headshot-container">
-        <img class='headshot-img' src="images/bethanyheadshot.jpg" alt="Bethany Fannin Headshot" />
+        <img class='headshot-img' src="resources/images/bethanyheadshot.jpg" alt="Bethany Fannin Headshot" />
       </div>
     </div>
   </section>
-  <section class="work">
+  <section class="work" id="work">
     <h2>Work</h2>
       <div class="project-container">
         <div class="project-card">
           <h3>Student Website</h3>
           <p class="subtext">HTML, CSS, JavaScript</p>
-          <img class="project-image" src="images/projects/bethanyswebsite.png" alt="Bethany's Website Screenshot" />
+          <img class="project-image" src="resources/images/projects/bethanyswebsite.png" alt="Bethany's Website Screenshot" />
           <p>My website on the UNCW student server showcasing the work I completed in my Web Page Development course my junior year of college.</p>
           <a href="http://student.uncw.edu/bjf5201" target="_blank">Go
             <i class="fa-solid fa-arrow-right"></i>
@@ -78,22 +79,446 @@
         <div class="project-card">
           <h3>Python Snippets</h3>
           <p class="subtext">Python</p>
-          <img class="project-image" src="images/projects/pythonsnippets.png" alt="Python Snippets Screenshot" />
-          <p>Work from my Introduction to Computer Science course. Just a few small pieces of Python code from my daily Python practice; snippets that I have continued to build upon.</p>
-          <a href="http://www.github.com/bjf5201/python-snippets" target="_blank">Go
-            <i class="fa-solid fa-arrow-right"></i>
-            <i class="fa-regular fa-window-restore"></i></a>
+          <div class="card-container">
+            <img class="project-image" src="resources/images/projects/pythonsnippets.png" alt="Python Snippets Screenshot" />
+            <div class="paragraph-container">
+              <p>Work from my Introduction to Computer Science course. Just a few small pieces of Python code from my daily Python practice; snippets that I have continued to build upon.</p>
+              <a href="http://www.github.com/bjf5201/python-snippets" target="_blank">Go
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-regular fa-window-restore"></i></a>
+            </div>
+          </div>
         </div>
         <div class="project-card">
           <h3>Business Systems</h3>
           <p class="subtext">C#</p>
-          <img class="project-image" src="images/projects/businesssystems.png" alt="Business Systems Screenshot" />
+          <img class="project-image" src="resources/images/projects/businesssystems.png" alt="Business Systems Screenshot" />
           <p>In this project I utilize C# to create business solutions such as a point-of-sale system in this sampling of work from my Business Applications course.</p>
-          <a href="http://miscapstone.uncw.edu/316s21fanninb/MIS316/default.aspx" target="_blank">Go
+          <a class='project-link' href="http://miscapstone.uncw.edu/316s21fanninb/MIS316/default.aspx" target="_blank">Go
             <i class="fa-solid fa-arrow-right"></i>
             <i class="fa-regular fa-window-restore"></i></a>
         </div>
       </div>
+  </section>
+  <section class="resume" id="resume">
+    <h2>Resume</h2>
+    <a class="btn" href="/resources/pdf/BethanyFanninResume.pdf" target="_blank">Download PDF Version</a>
+    
+    <div class="resume-container">
+      <div class="header">
+        <div class="full-name">
+          <span class="first-name">Bethany</span> <span class="last-name">Fannin</span>
+        </div>
+      </div>
+      <div class="contact-info">
+        <span class="email">Email:</span> <span class="email-val">contact@bethanyfannin.com</span>
+        <span class="separator"></span>
+        <span class="phone">Phone:</span> <span class="phone-val">910.800.1463</span>
+      </div>
+      <div class="about">
+        <span class="title">Front-End Developer</span>
+        <span class="desc">I am a front-end developer with over ten years of experience developing websites using HTML, CSS, and JS. For the past year, I have begun to specialize in developing React applications. I use <a href="https://storybook.js.org" target=_blank">Storybook.js</a> and <a href="https://material.io/develop" target="_blank">Material design</a> standards to ensure that my code follows the industry's best practices in terms of UI development, testing and documentation.</span>
+      </div>
+
+      <div class="experience">
+        <div class="section">
+          <h3 class="section__title">Experience</h3>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Pearson</div>
+                <div class="addr">Durham, NC</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Front-End Developer Intern</div>
+                <div class="duration">June 2022 - Aug 2022</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <ul>
+                    <li>Designed and built a server management system in React that connected to an AWS back end. Created diagrams for application logical flow.</li>
+                    <li>Refactor front-end UI according to Storybook.js and Material UI standards.</li>
+                    <li>Create documentation for users and future developers explaining how to use and build upon the application.</li>
+                    <li>Built out and costed a back-end project, ensuring it was within the team's budget. Developed the project using Infrastructure as Code (IaC) via Terraform.</li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Live Oak Bank</div>
+                <div class="addr">Wilmington, NC</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Cloud Architect/IT Support Intern</div>
+                <div class="duration">May 2021 - August 2021</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <ul>
+                    <li>Aided in the development and maintenance of various system applications.</li>
+                    <li>Deployed and managed solutions for various cloud environments (AWS, Azure) using Terraform, ensuring they met established SLAs.</li>
+                    <li>Worked with Senior Developers to write scripts in Bash or Golang to manage and monitor different levels of the server stack.</li>
+                    <li>Created a new company-wide laptop policy to address maintenance inefficiencies.</li>
+                    <li>Developed best practice documentation for inter-company communication on the company intranet.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">ProCTS</div>
+                <div class="addr">Wilmington, NC</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Network Administration Intern</div>
+                <div class="duration">December 2019 - March 2020</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <ul>
+                    <li>Created and maintained user accounts on Windows and UNIX platforms, establishing VPN access and ensuring accurate permissions.</li>
+                    <li>Developed organizational units in Active Directory and managed user and group security policies.</li>
+                    <li>Installed a new POS system and assisted with the setup of an intranet for a restaurant.</li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Cape Fear Community College</div>
+                <div class="addr">Wilmington, NC</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Digital Marketing Intern</div>
+                <div class="duration">January 2019 - May 2020</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <ul>
+                    <li>Collaborated with senior administrators and web developers to redesign the entire college website leading to an increase in site usability.</li>
+                    <li>Promoted college activities and events through the utilization of social media marketing across a variety of platforms.</li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Studio A Acting Company</div>
+                <div class="addr">Durham, NC</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Co-Founder/Board Member</div>
+                <div class="duration">August 2010 - March 2017</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <ul>
+                    <li>Founded an acting company and organized, performed, and helped to produce seven of the company's plays.</li>
+                    <li>Organized fundraising activities for the company, raising $2,000 to produce the first play.</li>
+                    <li>Faciliated meetings of the board, created objectives, set deadlines and schedules, - and ensured that all tasks were delegated appropriately.</li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="education">
+        <div class="section">
+          <h3 class="section__title">Education</h3>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">University of North Carolina Wilmington</div>
+                <div class="gpa">GPA: 3.42</div>
+              </div>
+              <div class="right">
+                <div class="name">Bachelor of Science in Information Technology</div>
+                <div class="duration">August 2020 - June 2022</div>
+              </div>
+            </div>
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Cape Fear Community College</div>
+                <div class="gpa">GPA: 4.00</div>
+              </div>
+              <div class="right">
+                <div class="name">Associate of Arts</div>
+                <div class="duration">January 2018 - June 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills_section">
+        <div class="section">
+          <h3 class="section_title">Skills</h3>
+          <div class="skills">
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                JavaScript
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox" checked>
+                <label for "ck5"></label>
+              </div>
+            </div>
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                HTML
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                CSS
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox"/>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                SASS
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox">
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                React
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox">
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                Python
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" />
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox">
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                SQL
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked/>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                PHP
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked/>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                Bash
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked />
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                PowerShell
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" />
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" />
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                C#
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" />
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" />
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                MongoDB
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" />
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox">
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+            <div class="skills_item">
+              <div class="left"><div class="name">
+                Git
+              </div></div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked/>
+                <label for "ck1"></label>
+                <input id="ck2" type="checkbox" checked/>
+                <label for "ck2"></label>
+                <input id="ck3" type="checkbox" checked/>
+                <label for "ck3"></label>
+                <input for "ck4" type="checkbox" checked/>
+                <label for "ck4"></label>
+                <input for "ck5" type="checkbox" checked />
+                <label for "ck5"></label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="volunteer">
+        <h3>Community Involvement</h3>
+      </div>
+
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
   </section>
   <footer></footer>
   <script src="scripts/main.js" />
