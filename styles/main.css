@@ -152,35 +152,14 @@ p {
 }
 
 .burger {
+  font-size: 30px;
   background-color: transparent;
   display: block;
   margin: 0.5em;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #442c2e;
-}
-
 .burger:focus {
   outline: none;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
 }
 
 @media only screen and (min-width: 750px) {
@@ -355,7 +334,11 @@ footer {
   margin-bottom: 1rem;
 }
 
-ul.active {
+.hero-nav.active {
+  flex-direction: column;
+}
+
+ul.show {
   display: block;
 }
 
