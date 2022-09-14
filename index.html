@@ -27,6 +27,9 @@
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+        <div class="burger" id="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </div>
     <div class="hero-area">
@@ -57,10 +60,12 @@
         <p>I give life my all - whether it be theater or coding, I am a vibrant person who is constantly working on some passion project. Check out my most recent <a href="https://github.com/bjf5201" target="_blank">projects <i class="fa-regular fa-window-restore"></i></a> to see what I've been up to lately.</p>
         <p>I have always had a curiosity for finding new ways of accessing, organizing, and presenting information using digital technologies. In personal projects, I value tenacity, humility, and utilizing my abilities to improve the lives of others. When working with a team, I offer a strong work ethic and an open mind while working to ensure that every voice is heard. In group settings, I prioritize empathetic, supportive, and transparent communication above all else.</p> 
         <p>I am obsessed with well-written documentation and instructional templates. Analyzing complex systems and developing neat, descriptive language for them brings me great happiness!</p>
-        <p class="center"><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></p>
+        <div class="center">
+          <div class="top-link"><p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></p></div>
+        </div>
       </div>
       <div class="headshot-container">
-        <img class='headshot-img' src="resources/images/bethanyheadshot.jpg" alt="Bethany Fannin Headshot" />
+        <img class="headshot-img" src="/resources/images/bethanyheadshot.jpg" alt="Bethany Fannin Headshot"/>
       </div>
     </div>
   </section>
@@ -99,6 +104,9 @@
             <i class="fa-regular fa-window-restore"></i></a>
         </div>
       </div>
+      <div class="center">
+        <div class="top-link"><p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></p></div>
+      </div>
   </section>
   <section class="resume" id="resume">
     <h2>Resume</h2>
@@ -113,11 +121,11 @@
       <div class="contact-info">
         <span class="email">Email:</span> <span class="email-val">contact@bethanyfannin.com</span>
         <span class="separator"></span>
-        <span class="phone">Phone:</span> <span class="phone-val">910.800.1463</span>
+        <span class="phone">Phone:</span> <span class="phone-val">919.704.2721</span>
       </div>
       <div class="about">
         <span class="title">Front-End Developer</span>
-        <span class="desc">I am a front-end developer with over ten years of experience developing websites using HTML, CSS, and JS. For the past year, I have begun to specialize in developing React applications. I use <a href="https://storybook.js.org" target=_blank">Storybook.js</a> and <a href="https://material.io/develop" target="_blank">Material design</a> standards to ensure that my code follows the industry's best practices in terms of UI development, testing and documentation.</span>
+        <span class="desc">I am a front-end developer with over ten years of experience developing websites using HTML, CSS, and JS. For the past year, I have begun to specialize in developing React applications. I use <a href="https://storybook.js.org" target=_blank">Storybook.js</a> and <a href="https://material.io/develop" target="_blank">Material UI</a> design standards to ensure that my code follows the industry's best practices in terms of UI development, testing and documentation.</span>
       </div>
 
       <div class="experience">
@@ -270,7 +278,7 @@
 
       <div class="skills_section">
         <div class="section">
-          <h3 class="section_title">Skills</h3>
+          <h3 class="section__title">Skills</h3>
           <div class="skills">
             <div class="skills_item">
               <div class="left"><div class="name">
@@ -509,18 +517,95 @@
         </div>
       </div>
 
-      
-
       <div class="volunteer">
-        <h3>Community Involvement</h3>
-      </div>
+        <div class="section">
+          <h3 class="section__title">Community Involvement</h3>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Information Systems Association</div>
+                <div class="addr">UNCW</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Director of Communications</div>
+                <div class="duration">August 2020 - May 2022</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <p>Created association's social media presence and organized meetings where professionals in the community came and demonstrated their skills and held Q&A sessions for members.</p>
+                  
+                </div>
+              </div>
+            </div>
 
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Feminist Alliance</div>
+                <div class="addr">Cape Fear Community College</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Active Member</div>
+                <div class="duration">August 2018 - May 2020</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <p>Spearheaded the organization of a "Coffee and Consent" event with the local Rape Crisis center; attended monthly meetings to set agendas and goals.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">Phi Theta Kappa Honors Society</div>
+                <div class="addr">Cape Fear Community College/UNCW</div>
+                
+              </div>
+              <div class="right">
+                <div class="name">Member</div>
+                <div class="duration">August 2018 - May 2022</div>
+              </div>
+              <div class="center">
+                <div class="desc">
+                  <p>An active member involved in service, volunteering for such events as the Muscular Dystrophy Association's Annual Charity Gala.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="top-link"><p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></p></div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-  </section>
-  <footer></footer>
-  <script src="scripts/main.js" />
+  <footer>
+    <div class="footer__contact">
+      <div class="footer__contact-item">
+        <span class="info"><a href="mailto:contact@bethanyfannin.com">contact@bethanyfannin.com</a></span>
+      </div>
+      <div class="footer__contact-item">
+        <span class="info"><a href="tel:19197042721">1.919.704.2721</a></span>
+      </div>
+      <div class="footer__contact-item">
+        <span class="info">&copy; Bethany Fannin 2019 - 2022.</span>
+      </div>
+    </div>
+    <div class="footer__socials">
+      <div class="twitter">
+        <a href="https://twitter.com/bethanyfannin" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/bjf5201/" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/bethany-fannin/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.js"/>
 </body>
 </html>

@@ -5,31 +5,58 @@
 @import '//styles/base/variables';
 @import '//styles/base/variables';
 @import '//styles/base/variables';
-@import '//styles/base/variables';
-* {
-  outline: none;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html,
-body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #ffffff;
-  font-family: "Rubik", sans-serif;
-  scroll-behavior: smooth;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -40,8 +67,9 @@ h1 {
 
 h2 {
   font-size: 60px;
+  font-weight: 500;
   color: #442c2e;
-  padding-left: 40px;
+  padding: 0.5em;
 }
 
 h3 {
@@ -111,6 +139,10 @@ p {
   opacity: 0.32;
 }
 
+.burger {
+  font-size: 24px;
+}
+
 .headshot-img {
   height: 330px;
   width: 300px;
@@ -148,6 +180,10 @@ ul {
   padding: 0;
 }
 
+.top-link {
+  margin-bottom: 10px;
+}
+
 .nav-link {
   text-decoration: none;
   color: #442c2e;
@@ -170,11 +206,63 @@ ul {
 }
 
 footer {
-  height: 500px;
   background-color: #442c2e;
   font-size: 1rem;
+  color: #ffffff;
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
 }
 
+.footer__contact-item {
+  display: flex;
+  justify-content: start;
+}
+
+.label {
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.info {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.info a {
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.info a:hover {
+  color: #c7a8ab;
+  background-color: #fedbd0;
+}
+
+.github,
+.twitter,
+.linkedin {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 750px) {
+  .footer__contact {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__socials {
+    display: flex;
+    justify-content: space-between;
+  }
+  .github,
+.twitter,
+.linkedin {
+    font-size: 24px;
+  }
+}
 .navbar {
   display: flex;
   flex-direction: column;
@@ -183,11 +271,6 @@ footer {
 
 .logo {
   margin-top: 0.5em;
-}
-@media screen and (min-width: 750px) {
-  .logo {
-    margin-top: -0.3em;
-  }
 }
 
 .hero-nav {
@@ -232,6 +315,17 @@ footer {
     margin-right: 1rem;
   }
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subsection-container {
   display: flex;
   flex-direction: column-reverse;
@@ -244,6 +338,10 @@ footer {
   }
 }
 
+.subsection p {
+  margin-top: 1em;
+}
+
 .headshot-container {
   display: flex;
   align-items: center;
@@ -251,11 +349,13 @@ footer {
 @media only screen and (min-width: 750px) and (max-width: 875) {
   .headshot-container {
     align-items: start;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 876px) {
   .headshot-container {
     align-items: center;
+    padding-bottom: 40px;
   }
 }
 
@@ -287,6 +387,11 @@ section {
   font-weight: 300;
 }
 
+@media screen and (max-width: 750px) {
+  .socials {
+    display: none;
+  }
+}
 .work {
   display: flex;
   flex-direction: column;
@@ -345,7 +450,6 @@ section {
   max-width: 1000px;
   background: #ffffff;
   margin: 0px auto 0px;
-  box-shadow: 1px 1px 2px #b7a1b6;
   border-radius: 3px;
   padding: 40px;
   margin-top: 50px;
@@ -410,6 +514,7 @@ section {
   color: #442c2e;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
@@ -466,17 +571,6 @@ center {
   font-style: italic;
 }
 
-.resume a {
-  text-decoration: none;
-  color: #000;
-  font-style: italic;
-}
-
-.resume a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
 .skills_item {
   margin-bottom: 10px;
 }
@@ -497,6 +591,11 @@ center {
 }
 .skills_item .right input:checked + label {
   background: #442c2e;
+}
+
+.contact {
+  background-color: #feeae6;
+  color: #442c2e;
 }
 
 /*# sourceMappingURL=main.css.map */
