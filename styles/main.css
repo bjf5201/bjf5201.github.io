@@ -140,9 +140,22 @@ p {
 }
 
 .burger {
-  font-size: 24px;
+  border: 0;
+  background-color: transparent;
+  display: block;
+  font-size: 30px;
+  margin: 0.5em;
 }
 
+.burger:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .burger {
+    display: none;
+  }
+}
 .headshot-img {
   height: 330px;
   width: 300px;
@@ -268,23 +281,23 @@ footer {
 }
 .navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  background-color: #feeae6;
 }
 
 .logo {
-  margin-top: 0.5em;
+  display: none;
 }
 
 .hero-nav {
   display: flex;
+  align-items: flex-end;
+  background-color: #feeae6;
 }
 .hero-nav ul {
-  display: flex;
-  flex-direction: column;
+  display: none;
   list-style: none;
-  justify-content: space-between;
-  align-content: center;
+  background-color: transparent;
 }
 .hero-nav ul li {
   text-decoration: none;
@@ -297,6 +310,29 @@ footer {
   margin-bottom: 1rem;
 }
 
+ul.show {
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar {
+    justify-content: space-between;
+    background-color: #fedbd0;
+  }
+  .hero-nav {
+    background-color: #fedbd0;
+  }
+  .logo {
+    display: block;
+    margin: 0.5em;
+  }
+  ul {
+    background-color: #fedbd0;
+  }
+  li {
+    background-color: #fedbd0;
+  }
+}
 @media screen and (min-width: 750px) {
   .navbar {
     flex-direction: row;
@@ -309,6 +345,7 @@ footer {
     flex-direction: row;
   }
   .hero-nav ul {
+    display: flex;
     flex-direction: row;
   }
   .hero-nav ul li {
