@@ -60,11 +60,16 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0px;
   font-weight: 600;
 }
 
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 h2 {
   font-size: 60px;
   font-weight: 500;
@@ -355,10 +360,10 @@ ul.show {
     margin: 0.5em;
   }
   ul {
-    background-color: #fedbd0;
+    background-color: transparent;
   }
   li {
-    background-color: #fedbd0;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 750px) {
@@ -435,7 +440,7 @@ section {
 .hero {
   background-color: #fedbd0;
   color: #442c2e;
-  height: 100vh;
+  height: 600px;
   font-size: 40px;
 }
 
@@ -455,6 +460,16 @@ section {
   font-weight: 300;
 }
 
+@media only screen and (orientation: landscape) and (max-width: 1085px) {
+  .hero-area {
+    justify-content: flex-end;
+  }
+  .hero-text {
+    display: block;
+    position: relative;
+    margin-top: 2em;
+  }
+}
 @media screen and (max-width: 750px) {
   .socials {
     display: none;
